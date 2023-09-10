@@ -1,0 +1,51 @@
+.reserveContainer {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 200px;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.reservation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.reservationHeader {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.reservationHeader div img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 40px;
+}
+
+.reservationHeader h2,
+p {
+  padding-bottom: 50px;
+}
+
+.reservation button {
+  width: 200px;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .reserveContainer {
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .reservation button {
+    width: 75vw;
+    margin-top: 0;
+  }
+}

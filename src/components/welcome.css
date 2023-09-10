@@ -1,0 +1,33 @@
+.welcome {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 70px;
+  gap: 20px;
+}
+
+.welcome .text {
+  width: inherit;
+  text-align: center;
+  font-size: 20px;
+}
+
+.welcome .btn {
+  padding: 15px 50px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.welcome div img {
+  padding-top: 50px;
+}
+
+@media (max-width: 800px) {
+  .welcome {
+    width: 90%;
+  }
+}

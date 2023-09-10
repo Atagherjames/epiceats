@@ -1,0 +1,85 @@
+/* Footer.css (or use styled-components) */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer h2 {
+  font-size: 25px;
+}
+
+.footerContact {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footerContact a {
+  color: #f4f4f4;
+  text-decoration: none;
+}
+
+.footerContact a:hover {
+  color: gray;
+}
+
+.footerContact p {
+  padding-top: 10px;
+  padding-bottom: 14px;
+  color: #f4f4f4;
+  font-size: 20px;
+}
+
+.footerLinks {
+  flex: 1;
+}
+
+.footerLinks ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.footerLinks li {
+  margin-bottom: 10px;
+}
+
+.footerLinks a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footerLinks a:hover {
+  color: gray;
+}
+
+@media (max-width: 768px) {
+  .footerContent {
+    flex-direction: column;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer h2 {
+    font-size: 22px;
+  }
+
+  .footerContact {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}

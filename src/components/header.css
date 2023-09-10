@@ -1,0 +1,52 @@
+.header {
+  width: 100vw;
+  position: fixed;
+  padding-top: 15px;
+  padding-bottom: 7px;
+  opacity: 1;
+  top: 0;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.scroll {
+  background: #f4f4f4;
+  border-bottom: 1px solid gainsboro;
+}
+.headerContainer {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.headerLeft {
+  height: 50px;
+  width: 50px;
+}
+
+.headerLeft img {
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+}
+
+.headerRight {
+  display: flex;
+  gap: 30px;
+}
+
+.reserveCotainer {
+  display: flex;
+}
+
+.reserveCotainer h3 {
+  margin-top: 10px;
+}
+
+@media (max-width: 1200px) {
+  .headerContainer {
+    width: 90%;
+  }
+}

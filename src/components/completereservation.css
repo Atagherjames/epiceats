@@ -1,0 +1,98 @@
+.completeReservation {
+  position: relative;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  display: grid;
+  place-items: center;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.reserveLogo img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 100px;
+}
+
+.reserveDetails {
+  display: flex;
+  gap: 50px;
+}
+
+.completeReservation input {
+  padding: 10px 20px;
+  border: 1px solid black;
+}
+
+.completeReservation input:focus {
+  outline: none;
+  border: 1px solid gray;
+}
+
+.reserveLeft h3 {
+  display: flex;
+  font-size: 30px;
+}
+
+.reserveLeft p {
+  margin-top: 20px;
+}
+
+form .firstInput,
+form .secondInput {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+form button {
+  width: 100%;
+  height: 45px;
+  background: #f4f4f4;
+  border: 1px solid gray;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.sucess {
+  position: absolute;
+  left: 50px;
+  top: 100px;
+}
+.reserveSummary article {
+  background: #f4f4f4;
+}
+
+.reserveSummary > p {
+  background: #f4f4f4;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.reserveSummary article p {
+  padding: 14px;
+}
+
+@media (max-width: 1200px) {
+  .completeReservation {
+    width: 90%;
+  }
+}
+
+@media (max-width: 950px) {
+  .reserveDetails {
+    flex-direction: column-reverse;
+  }
+  .reserveLeft h3 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  form .firstInput,
+  form .secondInput {
+    flex-direction: column;
+    width: 100%;
+  }
+}

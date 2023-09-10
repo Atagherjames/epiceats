@@ -1,0 +1,48 @@
+.menu {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 100px;
+  display: grid;
+  place-items: center;
+  gap: 30px;
+}
+
+.menuContainer {
+  display: flex;
+  gap: 40px;
+  padding-bottom: 20px;
+  margin-top: 50px;
+}
+
+.menuContainer .menu-btn {
+  padding: 20px 30px;
+  width: 250px;
+  color: black;
+  box-shadow: 5px 5px 10px #f4f4f4, -5px -5px 10px #f4f4f4;
+  font-size: 17px;
+}
+
+@media (max-width: 1200px) {
+  .menuContainer {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .menuContainer {
+    flex-direction: column;
+  }
+
+  .menuContainer .menu-btn {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .menu h1 {
+    font-size: 22px;
+  }
+
+  .menu h2 {
+    font-size: 20px;
+  }
+}

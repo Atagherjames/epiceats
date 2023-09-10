@@ -1,0 +1,41 @@
+.introContainer {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.introContainer .left {
+  flex-basis: 50%;
+}
+
+.introContainer .left img {
+  width: 100%;
+}
+
+.introContainer .right {
+  padding-top: 80px;
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.introContainer .right h3 {
+  font-style: italic;
+}
+
+@media (max-width: 1200px) {
+  .introContainer {
+    width: 90%;
+  }
+}
+
+@media (max-width: 800px) {
+  .introContainer {
+    flex-direction: column-reverse;
+  }
+}

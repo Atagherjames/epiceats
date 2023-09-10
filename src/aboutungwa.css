@@ -1,0 +1,51 @@
+.aboutUs {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 150px;
+  padding: 20px;
+  margin-bottom: 100px;
+  text-align: left;
+  border: 1px solid gainsboro;
+  background: #f4f4f4;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 40px;
+  padding-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+ol {
+  margin-left: 0;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+li {
+  font-size: 16px;
+  color: #777;
+  line-height: 1.5;
+}
+
+.bonAppetit {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .aboutUs {
+    max-width: 90%;
+  }
+}

@@ -1,0 +1,54 @@
+.links {
+  position: fixed;
+  top: 70px;
+  width: 70%;
+  margin-left: 15%;
+  display: flex;
+  height: 100vh;
+  gap: 100px;
+  animation: menu 0.4s ease-in;
+  z-index: 100;
+  opacity: 1;
+  background: linear-gradient(to right, #fff, #f4f4f4);
+}
+
+@keyframes menu {
+  0% {
+    right: -100%;
+  }
+
+  100% {
+    right: 0;
+  }
+}
+
+.links ul li {
+  font-size: 25px;
+  padding-top: 50px;
+  font-weight: 800;
+  font-style: italic;
+  right: -100%;
+}
+
+.links ul li a:hover {
+  color: blue;
+}
+
+@media (max-width: 1200px) {
+  .links {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+    opacity: 1;
+  }
+
+  .links img {
+    display: none;
+  }
+
+  .links ul li {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}

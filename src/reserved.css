@@ -1,0 +1,24 @@
+.reservedContainer {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  display: grid;
+  place-items: center;
+}
+
+.reservedContainer section {
+  background: #f4f4f4;
+  padding: 50px;
+}
+
+.epmty {
+  text-transform: uppercase;
+}
+
+.contain {
+  display: none;
+}
+
+.hidempty {
+  display: none;
+}

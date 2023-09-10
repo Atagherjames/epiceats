@@ -1,0 +1,33 @@
+.resContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.date {
+  min-width: 250px;
+  height: 55px;
+  padding: 20px;
+  font-size: 17px;
+  border-radius: 2px;
+  outline: 1px solid gray;
+  border: none;
+  margin-top: 7px;
+}
+
+.date:focus {
+  outline: 2px solid blue;
+  border: none;
+}
+
+@media (max-width: 1000px) {
+  .resContainer {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .date {
+    width: 96%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
