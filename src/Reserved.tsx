@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const Reserved = () => {
   const { state } = useDataStore();
+
   let empty = "empty";
   let notEmpty = "hidempty";
 
@@ -14,7 +15,7 @@ const Reserved = () => {
 
   return (
     <div className="reservedContainer">
-      <div className={empty}>You Have NO Reservation</div>
+      <div className={empty}>YOU HAVE NO RESERVATION</div>
       <section className={notEmpty}>
         <p>You have a table reserved for 30 minutes</p>
         <article>

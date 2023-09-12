@@ -11,12 +11,13 @@
   padding: 50px;
 }
 
-.epmty {
-  text-transform: uppercase;
-}
-
 .contain {
   display: none;
+}
+
+.empty {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .hidempty {

@@ -10,10 +10,6 @@ body {
   font-family: Mulish;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 a {
   text-decoration: none;
   color: black;

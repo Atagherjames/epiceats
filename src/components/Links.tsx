@@ -20,9 +20,9 @@ const Links = ({ sendDataToParent }: ChidlProps) => {
             </Link>
           </li>
           <li>
-            <a href="" onClick={() => sendDataToParent(false)}>
+            <Link to="/menu/lunch" onClick={() => sendDataToParent(false)}>
               Menus
-            </a>
+            </Link>
           </li>
           <li>
             <Link to="/about" onClick={() => sendDataToParent(false)}>
