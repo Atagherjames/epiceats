@@ -1,0 +1,46 @@
+menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 -2px 4px rgba(0, 0, 0, 0.1);
+  background-image: url("../../assets/best-waiter.webp");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right center;
+  padding: 50px;
+  gap: 50px;
+}
+
+form input {
+  width: 400px;
+  margin-bottom: 20px;
+  border-radius: 0;
+}
+
+form .btn {
+  width: 100%;
+  border-radius: 0;
+  color: #fff;
+  border: 0;
+}
+
+form .btn:hover {
+  background-color: black;
+}
+
+.card-title {
+  font-family: "Dancing Script";
+  font-size: 30px;
+}
+
+/* popover */
+.show {
+  border: 1px solid;
+  /* color: green; */
+  border-radius: 4px;
+}
+
+p.error {
+  border: 1px solid red;
+  color: red;
+}

@@ -1,0 +1,30 @@
+header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  opacity: 1 !important;
+  background: #fff;
+  z-index: 50000;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container nav {
+  display: flex;
+  gap: 50px;
+}
+
+.container nav a {
+  font-size: 15px;
+}
+
+.container nav a:hover {
+  color: goldenrod;
+}
+
+.active {
+  color: gold;
+}

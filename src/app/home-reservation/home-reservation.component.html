@@ -1,0 +1,111 @@
+<menu class="container">
+  <form [formGroup]="reservationForm" (ngSubmit)="onSubmitReservation()">
+    <h5 class="pb-4 card-title">Reservation Form</h5>
+    <input
+      class="form-control form-control-lg"
+      type="text"
+      placeholder="Full Name"
+      aria-label=".form-control-lg example"
+      formControlName="fullName"
+      [class.is-invalid]="
+        reservationForm.get('fullName')?.touched &&
+        reservationForm.get('fullName')?.invalid
+      "
+    />
+    <small
+      [class.d-none]="
+        reservationForm.get('fullName')?.valid ||
+        reservationForm.get('fullName')?.untouched
+      "
+      class="text-danger"
+    >
+      Please Enter Full Name</small
+    >
+
+    <input
+      class="form-control form-control-lg mt-4"
+      type="text"
+      placeholder="Email Address"
+      aria-label="default input example"
+      formControlName="email"
+      [class.is-invalid]="
+        reservationForm.get('email')?.touched &&
+        reservationForm.get('email')?.invalid
+      "
+    />
+    <small
+      [class.d-none]="
+        reservationForm.get('email')?.valid ||
+        reservationForm.get('email')?.untouched
+      "
+      class="text-danger"
+    >
+      Please Enter Your Email</small
+    >
+
+    <input
+      class="form-control form-control-lg mt-4"
+      type="text"
+      placeholder="Phone Number"
+      aria-label="reservation form"
+      formControlName="phoneNumber"
+      [class.is-invalid]="
+        reservationForm.get('phoneNumber')?.touched &&
+        reservationForm.get('phoneNumber')?.invalid
+      "
+    />
+    <small
+      [class.d-none]="
+        reservationForm.get('phoneNumber')?.valid ||
+        reservationForm.get('phoneNumber')?.untouched
+      "
+      class="text-danger"
+    >
+      Please Enter Your Phone Number</small
+    >
+
+    <input
+      type="time"
+      class="form-control form-control-lg mt-4"
+      formControlName="time"
+      [class.is-invalid]="
+        reservationForm.get('time')?.touched &&
+        reservationForm.get('time')?.invalid
+      "
+    />
+    <small
+      [class.d-none]="
+        reservationForm.get('time')?.valid ||
+        reservationForm.get('time')?.untouched
+      "
+      class="text-danger"
+    >
+      Please Select a Time</small
+    >
+
+    <input
+      type="date"
+      class="form-control form-control-lg mt-4"
+      formControlName="date"
+      [class.is-invalid]="
+        reservationForm.get('date')?.touched &&
+        reservationForm.get('date')?.invalid
+      "
+    />
+    <small
+      [class.d-none]="
+        reservationForm.get('date')?.valid ||
+        reservationForm.get('date')?.untouched
+      "
+      class="text-danger"
+    >
+      Please Choose a Date</small
+    >
+
+    <button class="btn btn-warning mt-4">Submit</button>
+  </form>
+
+  <p class="show p-3" *ngIf="isVisible" [class.error]="error">
+    {{ status }}
+  </p>
+</menu>

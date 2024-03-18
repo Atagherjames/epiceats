@@ -1,0 +1,27 @@
+menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 -2px 4px rgba(0, 0, 0, 0.1);
+  background-image: url("../../assets/food5.jpg"), url("../../assets/food3.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 200px, 200px;
+  background-position: right top, left bottom;
+  padding: 50px;
+  gap: 50px;
+}
+
+.active {
+  color: gold;
+}
+
+.nav {
+  cursor: pointer;
+}
+
+.menu-item {
+  display: grid;
+  grid-template-columns: 600px 600px;
+  gap: 50px;
+  justify-content: space-between;
+}

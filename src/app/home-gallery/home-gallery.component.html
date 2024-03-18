@@ -1,0 +1,62 @@
+<div class="container-fluid">
+  <menu class="container">
+    <div
+      (click)="selectTab('tab1')"
+      [class.active]="selectedTab === 'tab1'"
+      class="nav"
+    >
+      ALL
+    </div>
+    <div
+      (click)="selectTab('tab2')"
+      [class.active]="selectedTab === 'tab2'"
+      class="nav"
+    >
+      DESERT
+    </div>
+    <div
+      (click)="selectTab('tab3')"
+      [class.active]="selectedTab === 'tab3'"
+      class="nav"
+    >
+      COFFEE
+    </div>
+    <div
+      (click)="selectTab('tab4')"
+      [class.active]="selectedTab === 'tab4'"
+      class="nav"
+    >
+      DRINK
+    </div>
+    <div
+      (click)="selectTab('tab5')"
+      [class.active]="selectedTab === 'tab5'"
+      class="nav"
+    >
+      CATERING SERVICES
+    </div>
+  </menu>
+
+  <div class="container menu-item" style="margin-top: 20px">
+    <div
+      class="card rounded-0 bg-transparent border-0"
+      style="height: fit-content; margin: 0; padding: 0"
+    >
+      <div class="row g-0">
+        <div
+          class="col-md-4"
+          style="padding: 0; margin-bottom: 50px"
+          *ngFor="let gallery of galleries"
+        >
+          <img
+            [src]="gallery.url"
+            class="img-fluid rounded-start"
+            height="100%"
+            width="400px"
+            alt="..."
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

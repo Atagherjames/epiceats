@@ -1,0 +1,216 @@
+<section class="home">
+  <div class="container">
+    <div class="card text-center border-0 bg-transparent">
+      <div class="card-body">
+        <h5 class="card-title">Welcome Epiceats Resturant</h5>
+        <p class="card-text animate">
+          <span class="p-4">LOVES</span>
+
+          <span class="typing text-warning">{{ description | uppercase }}</span>
+
+          <span class="p-4">FOOD</span>
+        </p>
+        <p class="card-text small-text">
+          Enjoy our exquisite Nigerian cuisine while experiencing a true feeling
+          of taking a good meal. We take pride in our exceptional service,
+          world-class views, and fresh and local fare prepared by our chef and
+          owner.
+        </p>
+        <a href="#" class="btn btn-warning text-white rounded-0 mt-4"
+          >Order Now</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- about container -->
+<div class="container d-flex justify-content-between mt-4 pt-5">
+  <div class="card mb-3 border-0" style="max-width: 600px; padding: 0">
+    <div class="card-body">
+      <h5 class="card-title">About Epiceats Resturant</h5>
+      <p class="card-text about-text">
+        At Epiceats, we believe that dining is not just about food; it's an
+        experience, a journey that transcends taste and nourishes the soul.
+      </p>
+      <p class="card-text about-text">
+        Nestled in the heart of FCT, Epiceats Restaurant has been serving up
+        unforgettable moments and delectable flavors for 10 years. We are more
+        than just a restaurant; we are a culinary destination, a place where
+        memories are made and cherished
+      </p>
+      <a href="#" class="btn btn-warning text-white rounded-0 mt-4"
+        >READ MORE</a
+      >
+    </div>
+  </div>
+
+  <div class="card border-0" style="max-width: 400px; padding: 0">
+    <!-- card image -->
+    <img
+      src="../../assets/home-about.webp"
+      class="card-img-top rounded-0"
+      alt="..."
+    />
+  </div>
+</div>
+
+<!-- popular dish -->
+<div class="container-fluid popular">
+  <div class="card mx-auto border-0 text-center bg-transparent">
+    <div class="card-body">
+      <h5 class="card-title">Our Popular Dishes</h5>
+      <div class="brand">
+        <span class="line"></span>
+        <img
+          src="../../assets/epiceats.png"
+          alt="epiceats"
+          class="logo-img"
+          height="30px"
+          width="30px"
+        />
+        <span class="line"></span>
+      </div>
+      <h5 class="card-text">
+        Indulge in the exquisite flavors of our signature dish, a culinary
+        masterpiece that captivates the senses with every savory bite.
+      </h5>
+    </div>
+
+    <!-- popular dish!! -->
+    <div class="container d-flex justify-content-between w-60 mt-5">
+      <a routerLink="#">
+        <div class="card text-center pt-5" style="width: 350px">
+          <p class="card-text">
+            <img
+              src="../../assets/food.jpg"
+              alt="..."
+              height="250px"
+              width="250px"
+            />
+          </p>
+          <h5 class="card-text">
+            <a routerLink="#" class="hover">Chicken Meat</a>
+          </h5>
+          <h5 class="card-text text-warning">&#8358;5000</h5>
+        </div>
+      </a>
+
+      <a routerLink="#">
+        <div class="card text-center pt-5" style="width: 350px">
+          <p class="card-text">
+            <img
+              src="../../assets/salad.webp"
+              alt="..."
+              height="250px"
+              width="250px"
+            />
+          </p>
+          <h5 class="card-text">
+            <a routerLink="#" class="hover">Salad</a>
+          </h5>
+          <h5 class="card-text text-warning">&#8358;400</h5>
+        </div>
+      </a>
+
+      <a routerLink="#">
+        <div class="card text-center pt-5" style="width: 350px">
+          <p class="card-text">
+            <img
+              src="../../assets/spagetti.webp"
+              alt="..."
+              height="250px"
+              width="250px"
+            />
+          </p>
+          <h5 class="card-text">
+            <a routerLink="#" class="hover">Spaghetti</a>
+          </h5>
+          <h5 class="card-text text-warning">&#8358;600</h5>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-------- food Menu-------->
+<div class="container-fluid">
+  <div class="card mx-auto border-0 text-center bg-transparent">
+    <div class="card-body">
+      <h5 class="card-title">Our Food Menu</h5>
+      <div class="brand">
+        <span class="line"></span>
+        <img
+          src="../../assets/epiceats.png"
+          alt="epiceats"
+          class="logo-img"
+          height="30px"
+          width="30px"
+        />
+        <span class="line"></span>
+      </div>
+      <h5 class="card-text">
+        Explore our diverse menu, a gastronomic journey featuring a fusion of
+        bold and innovative flavors crafted to satisfy every palate.
+      </h5>
+    </div>
+    <section class="pt-4 pb-4">
+      <app-home-menu></app-home-menu>
+    </section>
+
+    <!-- gallery -->
+    <div class="container-fluid gallery">
+      <div class="card mx-auto border-0 text-center bg-transparent">
+        <div class="card-body">
+          <h5 class="card-title">Our Gallery</h5>
+          <div class="brand">
+            <span class="line"></span>
+            <img
+              src="../../assets/epiceats.png"
+              alt="epiceats"
+              class="logo-img"
+              height="30px"
+              width="30px"
+            />
+            <span class="line"></span>
+          </div>
+          <h5 class="card-text">
+            Immerse yourself in a visual feast through our gallery, showcasing
+            the artistry and passion behind each delectable creation and vibrant
+            dining experience.
+          </h5>
+        </div>
+        <section>
+          <app-home-gallery></app-home-gallery>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- gallery -->
+<div class="container-fluid reservation">
+  <div class="card mx-auto border-0 text-center bg-transparent">
+    <div class="card-body">
+      <h5 class="card-title">Make a Reservation</h5>
+      <div class="brand">
+        <span class="line"></span>
+        <img
+          src="../../assets/epiceats.png"
+          alt="epiceats"
+          class="logo-img"
+          height="30px"
+          width="30px"
+        />
+        <span class="line"></span>
+      </div>
+      <h5 class="card-text">
+        Secure your spot for an unforgettable dining experience by reserving a
+        table with us, where culinary excellence meets warm hospitality.
+      </h5>
+    </div>
+    <section>
+      <app-home-reservation></app-home-reservation>
+    </section>
+  </div>
+</div>

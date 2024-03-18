@@ -1,0 +1,85 @@
+<menu class="container">
+  <div
+    (click)="selectTab('tab1')"
+    [class.active]="selectedTab === 'tab1'"
+    class="nav"
+  >
+    ALL ITEM
+  </div>
+  <div
+    (click)="selectTab('tab2')"
+    [class.active]="selectedTab === 'tab2'"
+    class="nav"
+  >
+    BREAKFAST
+  </div>
+  <div
+    (click)="selectTab('tab3')"
+    [class.active]="selectedTab === 'tab3'"
+    class="nav"
+  >
+    LUNCH
+  </div>
+  <div
+    (click)="selectTab('tab4')"
+    [class.active]="selectedTab === 'tab4'"
+    class="nav"
+  >
+    DINNER
+  </div>
+  <div
+    (click)="selectTab('tab5')"
+    [class.active]="selectedTab === 'tab5'"
+    class="nav"
+  >
+    DRINK
+  </div>
+  <div
+    (click)="selectTab('tab6')"
+    [class.active]="selectedTab === 'tab6'"
+    class="nav"
+  >
+    PARTY
+  </div>
+  <div
+    (click)="selectTab('tab7')"
+    [class.active]="selectedTab === 'tab7'"
+    class="nav"
+  >
+    COFFEE
+  </div>
+</menu>
+
+<div class="container menu-item" style="padding: 0; margin-top: 60px">
+  <div
+    class="card rounded-0"
+    *ngFor="let food of foods"
+    style="height: fit-content; margin: 0; padding: 0"
+  >
+    <div class="row g-0">
+      <div
+        class="col-md-2"
+        style="border-right: 1px solid #dee2e6; padding: 0; margin: 0"
+      >
+        <img
+          [src]="food.url"
+          class="img-fluid rounded-start"
+          height="100%"
+          width="90px"
+          alt="..."
+        />
+      </div>
+      <div class="col-md-8">
+        <div
+          class="card-body d-flex align-items-center justify-content-between pt-4"
+        >
+          <h6 class="card-text">
+            <a href="#" style="padding: 0">{{ food.title }}</a>
+          </h6>
+
+          <h6 class="card-text text-warning">&#8358;{{ food.price }}</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
